@@ -109,6 +109,48 @@ button {
   margin-bottom: 1rem;
 }
 
+.password-container {
+  position: relative;
+}
+
+/* style handling toggle button */
+.password-container .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 8px;
+  display: block;
+  font-style: italic;
+  text-align: right;
+}
+
+.error-icon {
+  color: red;
+  font-size: 1em;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none; /* Initially hidden */
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container .error + .error-icon {
+  display: block; /* Show icon when input has error class */
+}
+
 small {
   display: flex;
   align-items: center;
